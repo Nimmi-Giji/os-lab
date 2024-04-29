@@ -3,3 +3,4 @@
 #include<unistd.h>
 #include<sys/ipc.h>
 #include<sys/shm.h>
+//reader
