@@ -52,7 +52,7 @@ void scan(int* queue, int head, int n, int dir) {
         }
     }
     else {
-        for(int i = 0 ; i < n ; i++) {
+        for(int i = n - 1; i >= 0 ; i--) {
             if(queue[i] <= pos) {
                 thm += abs(pos - queue[i]);
                 pos = queue[i];
@@ -73,7 +73,7 @@ void scan(int* queue, int head, int n, int dir) {
     printf("\nTotal head movement: %d\n", thm);
 }
 int main() {
-    int queue [] = {86, 1470, 913, 1774, 948, 1509, 1022, 1750, 130};
+    int queue [] = {86, 1470, 913, 1774, 948, 1509, 1022, 1750, 130, 97};
     int head = 143;
     int n = sizeof(queue)/sizeof(queue[0]);
     fcfs(queue, head, n);
