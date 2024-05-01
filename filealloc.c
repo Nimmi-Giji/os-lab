@@ -49,9 +49,13 @@ void indAlloc(int fileSize) {
             blocks[i] = true;
         }
     }
-    printf("Index Block: \n");
-    for(int i = 0; i < numBlocks ; i++) 
-        printf("%d->%d\n", i, index[i]);
+    if( count  == numBlocks ) {
+        printf("Index Block: \n");
+        for(int i = 0; i < numBlocks ; i++) 
+            printf("%d->%d\n", i, index[i]);
+    }
+    else
+        printf("Not enough memory\n");
 }
 int main() {
     init();
