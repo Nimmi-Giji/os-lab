@@ -78,7 +78,7 @@ void rr(queue* q, int n) {
     printf("Average waiting time: %f\n", (float)wt / n);
 }
 int main() {
-    printf("Enter number of processes: ");
+    printf("Enter number of processes:\n");
     int n;
     scanf("%d", &n);
     queue q;
